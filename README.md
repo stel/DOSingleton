@@ -8,43 +8,46 @@ You should subclass DOSingleton to make your own singleton:
 
 MySingleton.h
 
-	#import "DOSingleton.h"
-	
-	@interface MySingleton : DOSingleton {
-		NSString *foo;
-	}
-	
-	- (void)printFoo;
-	
-	@end
+``` objective-c
+#import "DOSingleton.h"
+
+@interface MySingleton : DOSingleton {
+	NSString *foo;
+}
+
+- (void)printFoo;	
+
+@end
+```
 
 MySingleton.m
 
-	#import "MySingleton.h"
+``` objective-c
+#import "MySingleton.h"
 	
-	@implementation MySingleton
+@implementation MySingleton
 	
-	- (id)init
-	{
-		self = [super init];
-	
-		if (self != nil) {
-			fooo = @"Foo";
-		}
-	
-		return self;
+- (id)init
+{
+	self = [super init];
+	if (self != nil) {
+		fooo = @"Foo";
 	}
+	return self;
+}
 	
-	- (void)printFoo
-	{
-		NSLog(@"%@", foo);
-	}
+- (void)printFoo
+{
+	NSLog(@"%@", foo);
+}
 	
-	@end
+@end
+```
 
-Then you can use your singleton:
-
-	[[MySingleton sharedInstance] printFoo];
+Then you can use your singleton like this:
+``` objective-c
+[[MySingleton sharedInstance] printFoo];
+```
 
 ## Requirements
 
