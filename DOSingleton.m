@@ -14,10 +14,9 @@ static NSMutableDictionary *_sharedInstances = nil;
 
 + (void)initialize
 {
-	static dispatch_once_t onceToken;
-	dispatch_once(&onceToken, ^{
+	if (_sharedInstances == nil) {
 		_sharedInstances = [NSMutableDictionary dictionary];
-	});
+	}
 }
 
 + (instancetype)sharedInstance
