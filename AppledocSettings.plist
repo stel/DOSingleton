@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--project-name</key>
+	<string>DOSingleton</string>
+	<key>--project-version</key>
+	<string>0.0.2</string>
+	<key>--project-company</key>
+	<string>Dmitry Obukhov</string>
+	<key>--output</key>
+	<string>Docs</string>
+	<key>--create-docset</key>
+	<false/>
+	<key>--create-html</key>
+	<true/>
+	<key>--repeat-first-par</key>
+	<false/>
+	<key>--verbose</key>
+	<integer>4</integer>
+	<key>--logformat</key>
+	<integer>1</integer>
+</dict>
+</plist>
