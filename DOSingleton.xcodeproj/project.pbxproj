@@ -25,8 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A1F37411729A6620003594D /* DOSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DOSingleton.h; path = DOSingleton/DOSingleton.h; sourceTree = "<group>"; };
-		0A1F37421729A6620003594D /* DOSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DOSingleton.m; path = DOSingleton/DOSingleton.m; sourceTree = "<group>"; };
+		0A1F37411729A6620003594D /* DOSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOSingleton.h; sourceTree = "<group>"; };
+		0A1F37421729A6620003594D /* DOSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOSingleton.m; sourceTree = "<group>"; };
 		0A1F37481729A6C10003594D /* libDOSingleton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDOSingleton.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1F375C1729A6C10003594D /* DOSingletonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DOSingletonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1F37651729A6C20003594D /* DOSingletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DOSingletonTests-Info.plist"; sourceTree = "<group>"; };
@@ -72,6 +72,7 @@
 				0A1F37421729A6620003594D /* DOSingleton.m */,
 			);
 			name = Classes;
+			path = DOSingleton;
 			sourceTree = "<group>";
 		};
 		0A1F37491729A6C10003594D /* Products */ = {
@@ -165,7 +166,9 @@
 		0A1F373B1729A3100003594D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DO;
 				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dmitry Obukhov";
 			};
 			buildConfigurationList = 0A1F373E1729A3100003594D /* Build configuration list for PBXProject "DOSingleton" */;
 			compatibilityVersion = "Xcode 3.2";
