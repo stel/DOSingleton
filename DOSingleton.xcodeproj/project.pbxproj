@@ -99,8 +99,7 @@
 				0A1F376A1729A6C20003594D /* DOSingletonTests.m */,
 				0A1F37641729A6C20003594D /* Supporting Files */,
 			);
-			name = Tests;
-			path = DOSingletonTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		0A1F37641729A6C20003594D /* Supporting Files */ = {
@@ -356,7 +355,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "DOSingletonTests/DOSingletonTests-Info.plist";
+				INFOPLIST_FILE = "Tests/DOSingletonTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,7 +388,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "DOSingletonTests/DOSingletonTests-Info.plist";
+				INFOPLIST_FILE = "Tests/DOSingletonTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -416,6 +415,7 @@
 				0A1F376E1729A6C20003594D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1F376F1729A6C20003594D /* Build configuration list for PBXNativeTarget "DOSingletonTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +424,7 @@
 				0A1F37711729A6C20003594D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

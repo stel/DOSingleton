@@ -7,6 +7,7 @@
 //
 
 #import "DOSingletonTests.h"
+#import "DOSingleton.h"
 
 @implementation DOSingletonTests
 
@@ -24,9 +25,12 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testUnique
 {
-    STFail(@"Unit tests are not implemented yet in DOSingletonTests");
+	DOSingleton* s1 = [[DOSingleton alloc] init];
+	DOSingleton* s2 = [[DOSingleton alloc] init];
+	
+	STAssertEqualObjects(s1, s2, @"Objects must be equal");
 }
 
 @end
