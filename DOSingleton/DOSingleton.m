@@ -68,6 +68,11 @@ static NSMutableDictionary *_sharedInstances = nil;
 	return sharedInstance;
 }
 
++ (instancetype)instance
+{
+	return [self sharedInstance];
+}
+
 - (id)init
 {
 	self = [super init];

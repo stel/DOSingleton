@@ -45,6 +45,13 @@
 */
 + (instancetype)sharedInstance;
 
+/**
+ `sharedInstance` alias.
+ 
+ @return Shared instance of the receiver class.
+ */
++ (instancetype)instance;
+
 /// @name Testing Singleton Initialization
 
 /**
