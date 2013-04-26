@@ -12,6 +12,8 @@
 		0A1F37721729A76D0003594D /* DOSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F37421729A6620003594D /* DOSingleton.m */; };
 		0A1F37731729A76E0003594D /* DOSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F37421729A6620003594D /* DOSingleton.m */; };
 		0A1F37761729A7DD0003594D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1F37741729A7BF0003594D /* SenTestingKit.framework */; };
+		0A1F377C172AFC210003594D /* BarSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F377B172AFC210003594D /* BarSingleton.m */; };
+		0A1F377F172AFC380003594D /* FooSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F377E172AFC370003594D /* FooSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,10 @@
 		0A1F37691729A6C20003594D /* DOSingletonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOSingletonTests.h; sourceTree = "<group>"; };
 		0A1F376A1729A6C20003594D /* DOSingletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOSingletonTests.m; sourceTree = "<group>"; };
 		0A1F37741729A7BF0003594D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A1F377A172AFC210003594D /* BarSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarSingleton.h; sourceTree = "<group>"; };
+		0A1F377B172AFC210003594D /* BarSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarSingleton.m; sourceTree = "<group>"; };
+		0A1F377D172AFC370003594D /* FooSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooSingleton.h; sourceTree = "<group>"; };
+		0A1F377E172AFC370003594D /* FooSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 				0A1F37691729A6C20003594D /* DOSingletonTests.h */,
 				0A1F376A1729A6C20003594D /* DOSingletonTests.m */,
 				0A1F37641729A6C20003594D /* Supporting Files */,
+				0A1F377D172AFC370003594D /* FooSingleton.h */,
+				0A1F377E172AFC370003594D /* FooSingleton.m */,
+				0A1F377A172AFC210003594D /* BarSingleton.h */,
+				0A1F377B172AFC210003594D /* BarSingleton.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -228,6 +238,8 @@
 			files = (
 				0A1F376B1729A6C20003594D /* DOSingletonTests.m in Sources */,
 				0A1F37731729A76E0003594D /* DOSingleton.m in Sources */,
+				0A1F377C172AFC210003594D /* BarSingleton.m in Sources */,
+				0A1F377F172AFC380003594D /* FooSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
