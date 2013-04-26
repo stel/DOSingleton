@@ -54,11 +54,14 @@ static NSMutableDictionary *_sharedInstances = nil;
 
 - (id)init
 {
-	// self is already the our singleton instance, which was created in allocWithZone:
-		
-	// Generally we don't even need to call super's initializer (or override init method) because we
-	// are subclass of NSObject and NSObject does no initialization.
-	return [super init];
+	self = [super init];
+	
+	if (self && !self.isInitialized) {
+		// Thread-safe because it called from +sharedInstance
+		_isInitialized = YES;
+	}
+	
+	return self;
 }
 
 @end

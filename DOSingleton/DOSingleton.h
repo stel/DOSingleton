@@ -31,4 +31,22 @@
  */
 + (instancetype)sharedInstance;
 
+/**
+ * A Boolean value that indicates whether the receiver has been initialized.
+ *
+ * This property is usefull if you make you own initializer or override `-init` method.
+ * You should check if your singleton object has already been initialized to prevent repeated 
+ * initialization in your custom initializer.
+ *
+ *     - (id)init
+ *     {
+ *         self = [super init];
+ *         if (self && !self.isInitialized) {
+ *             // Your initialization here
+ *         }
+ *         return self;
+ *     }
+ */
+@property (unsafe_unretained, readonly) BOOL isInitialized;
+
 @end
