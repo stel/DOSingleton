@@ -42,7 +42,7 @@ If you want to make your own initializer or override `-init` method your should 
 - (id)init
 {
 	self = [super init];
-	if (self != nil && !self.initialized) {
+	if (self != nil && !self.isInitialized) {
 		foo = @"Foo";
 	}
 	return self;
