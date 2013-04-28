@@ -1,12 +1,21 @@
 # DOSingleton
 
-DOSingleton is a subclassable Objective-C singleton for Mac OSX and iOS.
+`DOSingleton` is a subclassable Objective-C singleton for Mac OSX and iOS.
 
 ## Ussage
 
-You should subclass DOSingleton to make your own singleton:
+### Copy files
 
-MySingleton.h
+Copy the following files to your project:
+
+* `DOSingleton/DOSingleton.h`
+* `DOSingleton/DOSingleton.m`
+
+`DOSingleton` is also available on [CocoaPods](http://cocoapods.org)
+
+### Subclass
+
+`DOSingleton` is designed for subclassing, you should subclass it to make your own singleton:
 
 ``` objective-c
 #import "DOSingleton.h"
@@ -20,7 +29,10 @@ MySingleton.h
 @end
 ```
 
-MySingleton.m
+When subclassing `DOSingleton` you should think about your subclass as an ordinary class, `DOSingleton` makes sure that there is only one instance of your class.
+ 
+If you want to make your own initializer or override `-init` method your should check whether your singleton has already been initialized with `isInitialized` property to prevent repeated initialization.
+
 
 ``` objective-c
 #import "MySingleton.h"
@@ -30,8 +42,8 @@ MySingleton.m
 - (id)init
 {
 	self = [super init];
-	if (self != nil) {
-		fooo = @"Foo";
+	if (self != nil && !self.initialized) {
+		foo = @"Foo";
 	}
 	return self;
 }
@@ -44,15 +56,22 @@ MySingleton.m
 @end
 ```
 
-Then you can use your singleton like this:
+Then you can get the shared instance of your singleton with `+sharedInstance` methods:
+
 ``` objective-c
 [[MySingleton sharedInstance] printFoo];
 ```
 
 ## Requirements
 
-DOSingleton uses ARC.
+`DOSingleton` uses ARC.
+
+## Documentation
+
+http://cocoadocs.org/docsets/DOSingleton
 
 ## License
 
-DOSingleton is available under the MIT license. See the LICENSE file for more info.
+DOSingleton is available under the MIT license. See the [LICENSE.md](blob/master/LICENSE.md) file for more info.
+
+Feel free to use it and contribute!

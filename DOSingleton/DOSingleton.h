@@ -27,9 +27,9 @@
  
  ### Subclassing Notes
  
- When subclassing `DOSingleton` you should think about your class as an ordinary class, `DOSingleton` makes sure that there is only one instance of your class.
+ When subclassing `DOSingleton` you should think about your subclass as an ordinary class, `DOSingleton` makes sure that there is only one instance of your class.
  
- If you want to make your own initializer or override `init` method your should check whethe your delegate has already been initialized with `-isInitialized` property to prevent repeated initialization.
+ If you want to make your own initializer or override `-init` method your should check whether your singleton has already been initialized with `isInitialized` property to prevent repeated initialization.
 */
 
 @interface DOSingleton : NSObject
@@ -57,7 +57,7 @@
 /**
  A Boolean value that indicates whether the receiver has been initialized.
 
- This property is usefull if you make you own initializer or override `init` method.
+ This property is usefull if you make you own initializer or override `-init` method.
  You should check if your singleton object has already been initialized to prevent repeated initialization in your custom initializer.
  
 	- (id)init
