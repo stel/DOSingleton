@@ -11,7 +11,7 @@ Copy the following files to your project:
 * `DOSingleton/DOSingleton.h`
 * `DOSingleton/DOSingleton.m`
 
-`DOSingleton` is also available on [CocoaPods](http://cocoapods.org)
+`DOSingleton` is also available on [CocoaPods](http://cocoapods.org/?q=DOSingleton)
 
 ### Subclass
 
