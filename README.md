@@ -42,7 +42,7 @@ If you want to make your own initializer or override `-init` method your should 
 - (id)init
 {
 	self = [super init];
-	if (self != nil && !self.isInitialized) {
+	if (self && !self.isInitialized) {
 		foo = @"Foo";
 	}
 	return self;
@@ -72,6 +72,6 @@ http://cocoadocs.org/docsets/DOSingleton
 
 ## License
 
-DOSingleton is available under the MIT license. See the [LICENSE.md](blob/master/LICENSE.md) file for more info.
+DOSingleton is available under the MIT license. See the [LICENSE.md](LICENSE.md) file for more info.
 
 Feel free to use it and contribute!
