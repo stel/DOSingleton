@@ -69,6 +69,6 @@
 		return self;
 	}
 */
-@property (unsafe_unretained, readonly) BOOL isInitialized;
+@property (assign, readonly) BOOL isInitialized;
 
 @end
