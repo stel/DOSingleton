@@ -52,6 +52,22 @@
  */
 + (instancetype)instance;
 
+/// @name Destroy Singleton Instance
+
+/**
+ Destroy All Singleton Instances
+ 
+ @return void.
+ */
++ (void) destroyAllSingletons;
+
+/**
+ Destroy Singleton Instance
+ 
+ @return void.
+ */
++ (void) destroyInstance;
+
 /// @name Testing Singleton Initialization
 
 /**

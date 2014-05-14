@@ -11,7 +11,6 @@
 		0A1F376B1729A6C20003594D /* DOSingletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F376A1729A6C20003594D /* DOSingletonTests.m */; };
 		0A1F37721729A76D0003594D /* DOSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F37421729A6620003594D /* DOSingleton.m */; };
 		0A1F37731729A76E0003594D /* DOSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F37421729A6620003594D /* DOSingleton.m */; };
-		0A1F37761729A7DD0003594D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1F37741729A7BF0003594D /* SenTestingKit.framework */; };
 		0A1F377C172AFC210003594D /* BarSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F377B172AFC210003594D /* BarSingleton.m */; };
 		0A1F377F172AFC380003594D /* FooSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F377E172AFC370003594D /* FooSingleton.m */; };
 /* End PBXBuildFile section */
@@ -30,11 +29,10 @@
 		0A1F37411729A6620003594D /* DOSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOSingleton.h; sourceTree = "<group>"; };
 		0A1F37421729A6620003594D /* DOSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOSingleton.m; sourceTree = "<group>"; };
 		0A1F37481729A6C10003594D /* libDOSingleton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDOSingleton.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A1F375C1729A6C10003594D /* DOSingletonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DOSingletonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1F375C1729A6C10003594D /* DOSingletonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DOSingletonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1F37651729A6C20003594D /* DOSingletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DOSingletonTests-Info.plist"; sourceTree = "<group>"; };
 		0A1F37691729A6C20003594D /* DOSingletonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOSingletonTests.h; sourceTree = "<group>"; };
 		0A1F376A1729A6C20003594D /* DOSingletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOSingletonTests.m; sourceTree = "<group>"; };
-		0A1F37741729A7BF0003594D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0A1F377A172AFC210003594D /* BarSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarSingleton.h; sourceTree = "<group>"; };
 		0A1F377B172AFC210003594D /* BarSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarSingleton.m; sourceTree = "<group>"; };
 		0A1F377D172AFC370003594D /* FooSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooSingleton.h; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1F37761729A7DD0003594D /* SenTestingKit.framework in Frameworks */,
 				0A1F37621729A6C20003594D /* libDOSingleton.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1F37481729A6C10003594D /* libDOSingleton.a */,
-				0A1F375C1729A6C10003594D /* DOSingletonTests.octest */,
+				0A1F375C1729A6C10003594D /* DOSingletonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +90,6 @@
 		0A1F374A1729A6C10003594D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A1F37741729A7BF0003594D /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,8 +162,8 @@
 			);
 			name = DOSingletonTests;
 			productName = DOSingletonTests;
-			productReference = 0A1F375C1729A6C10003594D /* DOSingletonTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 0A1F375C1729A6C10003594D /* DOSingletonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,7 +172,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DO;
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dmitry Obukhov";
 			};
 			buildConfigurationList = 0A1F373E1729A3100003594D /* Build configuration list for PBXProject "DOSingleton" */;
@@ -257,6 +254,7 @@
 		0A1F373F1729A3100003594D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -270,7 +268,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -309,7 +306,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -341,7 +337,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -352,7 +347,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -372,7 +370,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -380,7 +377,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -392,7 +388,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -404,7 +403,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
