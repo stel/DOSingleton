@@ -73,6 +73,16 @@ static NSMutableDictionary *_sharedInstances = nil;
 	return [self sharedInstance];
 }
 
++ (void) destroyInstance
+{
+	[_sharedInstances removeObjectForKey:NSStringFromClass(self)];
+}
+
++ (void) destroyAllSingletons
+{
+	[_sharedInstances removeAllObjects];
+}
+
 - (id)init
 {
 	self = [super init];
