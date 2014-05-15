@@ -55,7 +55,9 @@
 /// @name Destroy Singleton Instance
 
 /**
- Destroy singleton instance
+ Destroys shared instance of singleton class (if there are no other references to that instance).
+ 
+ @warning *Note:* calling `+sharedInstance` after calling this method will create new singleton instance.
  */
 + (void)destroyInstance;
 
