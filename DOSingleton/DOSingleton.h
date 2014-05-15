@@ -55,11 +55,6 @@
 /// @name Destroy Singleton Instance
 
 /**
- Destroy all singleton instances
- */
-+ (void)destroyAllSingletons;
-
-/**
  Destroy singleton instance
  */
 + (void)destroyInstance;

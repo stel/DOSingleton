@@ -27,6 +27,8 @@ static NSMutableDictionary *_sharedInstances = nil;
 
 @implementation DOSingleton
 
+#pragma mark -
+
 + (void)initialize
 {
 	if (_sharedInstances == nil) {
@@ -73,15 +75,14 @@ static NSMutableDictionary *_sharedInstances = nil;
 	return [self sharedInstance];
 }
 
+#pragma mark -
+
 + (void)destroyInstance
 {
 	[_sharedInstances removeObjectForKey:NSStringFromClass(self)];
 }
 
-+ (void)destroyAllSingletons
-{
-	[_sharedInstances removeAllObjects];
-}
+#pragma mark -
 
 - (id)init
 {
