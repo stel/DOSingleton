@@ -71,4 +71,15 @@
 	XCTAssertEqualObjects(foo, foo2, @"Objects must be equal");
 }
 
+- (void)testDestroyInstance
+{
+    __weak DOSingleton *s = [DOSingleton sharedInstance];
+    
+    XCTAssertNotNil(s, @"Object must not be nil");
+    
+    [DOSingleton destroyInstance];
+    
+    XCTAssertNil(s, @"Object must be nil");
+}
+
 @end
