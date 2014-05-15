@@ -36,23 +36,27 @@ If you want to make your own initializer or override `-init` method your should 
 
 ``` objective-c
 #import "MySingleton.h"
-	
+
 @implementation MySingleton
-	
+
 - (id)init
 {
-	self = [super init];
-	if (self && !self.isInitialized) {
-		foo = @"Foo";
+	if (!self.isInitialized) {
+		self = [super init];
+
+		if (self) {
+			// Initialize self.
+		}
 	}
+ 
 	return self;
 }
-	
+
 - (void)printFoo
 {
 	NSLog(@"%@", foo);
 }
-	
+
 @end
 ```
 

@@ -1,6 +1,6 @@
 // DOSingleton.m
 //
-// Copyright (c) 2013 Dmitry Obukhov (stel2k@gmail.com)
+// Copyright (c) 2014 Dmitry Obukhov (stel2k@gmail.com)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -73,12 +73,12 @@ static NSMutableDictionary *_sharedInstances = nil;
 	return [self sharedInstance];
 }
 
-+ (void) destroyInstance
++ (void)destroyInstance
 {
 	[_sharedInstances removeObjectForKey:NSStringFromClass(self)];
 }
 
-+ (void) destroyAllSingletons
++ (void)destroyAllSingletons
 {
 	[_sharedInstances removeAllObjects];
 }

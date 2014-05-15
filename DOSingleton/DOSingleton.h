@@ -1,6 +1,6 @@
 // DOSingleton.h
 //
-// Copyright (c) 2013 Dmitry Obukhov (stel2k@gmail.com)
+// Copyright (c) 2014 Dmitry Obukhov (stel2k@gmail.com)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -55,18 +55,14 @@
 /// @name Destroy Singleton Instance
 
 /**
- Destroy All Singleton Instances
- 
- @return void.
+ Destroy all singleton instances
  */
-+ (void) destroyAllSingletons;
++ (void)destroyAllSingletons;
 
 /**
- Destroy Singleton Instance
- 
- @return void.
+ Destroy singleton instance
  */
-+ (void) destroyInstance;
++ (void)destroyInstance;
 
 /// @name Testing Singleton Initialization
 
@@ -76,12 +72,18 @@
  This property is usefull if you make you own initializer or override `-init` method.
  You should check if your singleton object has already been initialized to prevent repeated initialization in your custom initializer.
  
+ @warning *Important:* you should check whether your instance already initialized before calling `[super init]`.
+ 
 	- (id)init
 	{
-		self = [super init];
-		if (self && !self.isInitialized) {
-			// Initialize self.
-		}
+        if (!self.isInitialized) {
+            self = [super init];
+		
+            if (self) {
+                // Initialize self.
+            }
+        }
+ 
 		return self;
 	}
 */
