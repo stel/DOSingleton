@@ -1,5 +1,7 @@
 # DOSingleton
 
+[![Build Status](https://travis-ci.org/stel/DOSingleton.svg?branch=master)](https://travis-ci.org/stel/DOSingleton)
+
 `DOSingleton` is a subclassable Objective-C singleton for Mac OSX and iOS.
 
 ## Ussage
