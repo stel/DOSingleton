@@ -1,6 +1,9 @@
 # DOSingleton
 
-[![Build Status](https://travis-ci.org/stel/DOSingleton.svg?branch=master)](https://travis-ci.org/stel/DOSingleton)
+[![Version](http://img.shields.io/cocoapods/v/DOSingleton.svg?style=flat)](http://cocoadocs.org/docsets/DOSingleton)
+[![License](https://img.shields.io/cocoapods/l/DOSingleton.svg?style=flat)](http://cocoadocs.org/docsets/DOSingleton)
+[![Platform](https://img.shields.io/cocoapods/p/DOSingleton.svg?style=flat)](http://cocoadocs.org/docsets/DOSingleton)
+[![Build Status](http://img.shields.io/travis/stel/DOSingleton.svg?style=flat)](https://travis-ci.org/stel/DOSingleton)
 
 `DOSingleton` is a subclassable Objective-C singleton for Mac OSX and iOS.
 
